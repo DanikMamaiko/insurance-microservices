@@ -1,0 +1,19 @@
+server:
+  port: 8055
+
+spring:
+  application:
+    name: insurance
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ubank_insurance
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database: postgresql
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        format_sql: true

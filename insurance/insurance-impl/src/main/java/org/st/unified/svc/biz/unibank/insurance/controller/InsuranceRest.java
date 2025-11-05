@@ -5,12 +5,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RestController;
-import org.st.unified.svc.biz.unibank.insurance.model.Insurance;
-import org.st.unified.svc.biz.unibank.insurance.model.InsuranceAddRequest;
-import org.st.unified.svc.biz.unibank.insurance.model.InsuranceComparisonData;
-import org.st.unified.svc.biz.unibank.insurance.model.InsuranceComparisonResult;
-import org.st.unified.svc.biz.unibank.insurance.model.InsuranceUpdateRequest;
-import org.st.unified.svc.biz.unibank.insurance.model.InsuranceView;
+import org.st.unified.svc.biz.unibank.insurance.model.*;
 
 import java.util.List;
 
