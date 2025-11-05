@@ -15,8 +15,8 @@
     <modules>
         <module>insurance-provider-api</module>
         <module>insurance-impl</module>
-        <module>insurance-component</module>
         <module>insurance-api</module>
+        <module>insurance-component</module>
     </modules>
 
     <properties>
@@ -30,30 +30,45 @@
                 <artifactId>insurance-component</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
-            <dependency>
-                <groupId>org.st.unified.svc.biz.unibank.insurance</groupId>
-                <artifactId>insurance-component</artifactId>
-                <version>1.0-SNAPSHOT</version>
-            </dependency>
+
             <dependency>
                 <groupId>org.st.unified.svc.biz.unibank.insurance</groupId>
                 <artifactId>insurance-api</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
+
             <dependency>
                 <groupId>org.st.unified.svc.biz.unibank.insurance</groupId>
                 <artifactId>insurance-provider-api</artifactId>
                 <version>1.0-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>3.2.6</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-validation</artifactId>
+                <version>3.2.6</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-jpa</artifactId>
+                <version>3.2.6</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
 
     <dependencies>
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>3.8.1</version>
-            <scope>test</scope>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.32</version>
+            <optional>true</optional>
         </dependency>
     </dependencies>
 </project>

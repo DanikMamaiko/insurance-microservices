@@ -10,7 +10,20 @@
   <modules>
     <module>intg-belstrahovka</module>
     <module>insurance</module>
-      <module>intg-belstrahovka/intg-belstrahovka-api</module>
-    <module>intg-belstrahovka/intg-belstrahovka-impl</module>
   </modules>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.st.unified.svc.biz.unibank.insurance</groupId>
+        <artifactId>insurance-provider-api</artifactId>
+        <version>1.0-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>org.st.unified.svc.biz.unibank.insurance</groupId>
+        <artifactId>insurance-component</artifactId>
+        <version>1.0-SNAPSHOT</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 </project>
