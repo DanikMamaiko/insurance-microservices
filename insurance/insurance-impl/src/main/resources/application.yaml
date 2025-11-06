@@ -17,3 +17,7 @@ spring:
     properties:
       hibernate:
         format_sql: true
+
+insurance:
+  provider:
+    url: http://localhost:8066
