@@ -24,6 +24,12 @@ public class InsuranceEntity {
     @Column(nullable = false)
     private String type;
 
+    @Column(nullable = false, unique = true)
+    private String policy;
+
+    @Column(nullable = false)
+    private String coverageAmount;
+
     private LocalDate startDate;
 
     private LocalDate endDate;
