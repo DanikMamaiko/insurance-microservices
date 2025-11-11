@@ -3,7 +3,7 @@ package org.st.unified.svc.biz.unibank.insurance.dal.mapper;
 import org.mapstruct.Mapper;
 import org.st.unified.svc.biz.unibank.insurance.dal.entity.InsuranceEntity;
 import org.st.unified.svc.biz.unibank.insurance.model.InsuranceAddRequest;
-import org.st.unified.svc.biz.unibank.insurance.model.InsuranceModelUpdateRequest;
+import org.st.unified.svc.biz.unibank.insurance.model.InsuranceUpdateRequest;
 import org.st.unified.svc.biz.unibank.insurance.model.InsuranceView;
 
 import java.util.List;
@@ -13,7 +13,7 @@ public interface InsuranceMapper {
 
     InsuranceEntity toEntity(InsuranceAddRequest dto);
 
-    InsuranceEntity toEntity(InsuranceModelUpdateRequest dto);
+    InsuranceEntity toEntity(InsuranceUpdateRequest dto);
 
     InsuranceView toView(InsuranceEntity entity);
 

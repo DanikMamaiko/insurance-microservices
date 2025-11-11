@@ -19,10 +19,10 @@ public class InsuranceEntity {
     private String id;
 
     @Column(nullable = false, unique = true)
-    private String policyNumber;
+    private String name;
 
     @Column(nullable = false)
-    private String holderName;
+    private String type;
 
     private LocalDate startDate;
 
